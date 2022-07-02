@@ -1,6 +1,6 @@
-.carrusel{object-fit: cover;
+.carrusel{
+    object-fit: cover;
     height: 500px;
-
 }
 .planta{
     background-color: rgb(115, 212, 115);
