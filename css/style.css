@@ -23,3 +23,27 @@
 .lucha{
     background-color: orange;
 }
+ul{
+    list-style: none;
+}
+.version{
+    width: 400px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+li{
+    margin-top: 10px;
+}
+.evolucionpokemon{
+    background-color: rgb(150, 148, 148);
+    border-radius: 10px;
+    justify-content: center;
+}
+@media all and (max-width: 767px){
+    .version{
+        width: 300px;
+        border-radius: 10px;
+        color: whitesmoke;
+    }
+    body{text-align: center;}  
+}

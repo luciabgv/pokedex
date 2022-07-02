@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lucia Gonzalez" />
+    <meta name="description" content="Pagina de pokemones" />
+    <meta name="keywords" content="pokemon, pikachu, pokeball, pokebola" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand" href="../index.html">Pokedex</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="pages/" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar pokemon"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">
+                            <div>
+                                <i class="bi bi-search"></i>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container my-5">
+            <div id="carruselbanner" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/pokeballss.jpg" class="d-block w-100 carrusel" alt="imagen de pokeball" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/pikachupokeball.webp" class="d-block w-100 carrusel"
+                            alt="imagen de pokeball con pikachu" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/pokemon-ball.jpg" class="d-block w-100 carrusel"
+                            alt="imagen de pokeball con animal" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselbanner"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselbanner"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="container my-5">
+            <h2 class="text-center">
+                Pikachu <span class="text-secondary">N.°025</span>
+            </h2>
+            <article class="row">
+                <aside class="col-12 col-md-6">
+                    <img src="../img/pikachu.png" alt="imagen de pikachu" class="w-100" />
+                </aside>
+                <aside class="col-12 col-md-6">
+                    <p class="my-5">Cuanto más potente es la energía eléctrica que genera este Pokémon, más suaves y
+                        elásticas se vuelven las bolsas de sus mejillas.</p>
+                    <div class="container bg-primary version">
+                        <div class="col-6 col-sm-3 text-center">Version</div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6 col-sm-3">
+                                <ul>
+                                    <li>Altura</li>
+                                    <span>0,4 m</span>
+                                    <li>Peso</li>
+                                    <span>6,0 kg</span>
+                                    <li>Sexo</li>
+                                    <i class="bi bi-gender-male"></i><i class="bi bi-gender-female"></i>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <ul>
+                                    <li>Categoria</li>
+                                    <span>Ratón</span>
+                                    <li>Habilidad</li>
+                                    <span>Electricidad Estática</span>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <p>Tipo</p>
+                        <span class="badge rounded-pill text-bg-warning">Electrico</span>
+                        <p class="my-3">Debilidad</p>
+                        <span class="badge rounded-pill text-bg-warning">Tierra</span>
+                    </div>
+
+                </aside>
+                </div>
+            </article>
+
+            <article class="row evolucionpokemon w-100 align-self-center">
+                <h2 class="my-3">Evoluciones</h2>
+               <aside class="col-12 col-sm-4">
+                <img src="../img/172-pikachu1.png" alt="pikachu original sin evolucion" class="w-75">
+                <p>Pichu <span class="text-secondary">N.°172</span></p>
+                <p><span class="badge rounded-pill bg-warning">Electrico</span></p>
+               </aside>
+               <aside class="col-12 col-sm-4">
+                <img src="../img/pikachu.png" alt="pikachu primera evolucion" class="w-75">
+                <p>Pikachu <span class="text-secondary">N.025</span></p>
+                <p><span class="badge rounded-pill bg-warning">Electrico</span></p>
+               </aside>
+               <aside class="col-12 col-sm-4">
+                <img src="../img/026-pikachu3.png" alt="pikachu ultima evolucion" class="w-75">
+                <p>Raichu <span class="text-secondary">N.026</span></p>
+                <p><span class="badge rounded-pill bg-warning">Electrico</span></p>
+               </aside>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
