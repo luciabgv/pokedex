@@ -47,3 +47,10 @@ li{
     }
     body{text-align: center;}  
 }
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .version{
+        width: 300px;
+        border-radius: 10px;
+        color: whitesmoke;
+    }
+}
